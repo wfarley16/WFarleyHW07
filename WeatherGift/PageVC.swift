@@ -73,7 +73,7 @@ class PageVC: UIPageViewController {
         pageControl.numberOfPages = locationsArray.count
         pageControl.currentPage = currentPage
         
-        setViewControllers([createDetailVC(forPage: 0)], direction: .forward, animated: false, completion: nil)
+        setViewControllers([createDetailVC(forPage: currentPage)], direction: .forward, animated: false, completion: nil)
     }
     
     // MARK: - Create View Controller for UIPageViewController
